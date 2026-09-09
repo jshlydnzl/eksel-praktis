@@ -1,4 +1,4 @@
-# 📊 eksel-praktis
+# 📊 Excel Practice
 
 A dedicated Data Analytics portfolio repository focused purely on Excel pipeline architecture, data cleaning, and logic gates.
 
