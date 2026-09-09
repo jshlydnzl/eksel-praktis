@@ -1,0 +1,10 @@
+Attack_Vector,Severity_Level,Base_Response_Hours
+DDoS,Medium,4
+Phishing,High,12
+Ransomware,Critical,72
+SQL_Injection,Critical,48
+Malware_Dropper,High,24
+Brute_Force,Medium,8
+Insider_Threat,Critical,96
+Zero_Day,Critical,120
+Cross_Site_Scripting,Low,2

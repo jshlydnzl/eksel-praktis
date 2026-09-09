@@ -1,0 +1,9 @@
+Server_ID,Location,Data_Center_Tier
+SRV-001,"Tokyo, JP",Tier 3
+SRV-002,"Frankfurt, DE",Tier 1
+SRV-003,"Virginia, US",Tier 1
+SRV-004,"London, UK",Tier 1
+SRV-005,"Sydney, AU",Tier 2
+SRV-006,"Singapore, SG",Tier 2
+SRV-007,"Mumbai, IN",Tier 2
+SRV-008,"Sao Paulo, BR",Tier 1
