@@ -4,7 +4,7 @@
 The Security Operations Center (SOC) provided a raw dump of 10,000 cyber incident logs. The goal was to clean the data, link threat identifiers to their severity levels, and build an interactive dashboard to track attack types and volumes.
 
 ## 🏗️ Architecture & Workflow
-This project uses a layered architecture to separate raw data from the final visual dashboard:
+This practice uses a layered architecture to separate raw data from the final visual dashboard:
 * **Row_Logs:** The untouched raw dataset and lookup tables (`threat_matrix`, `server_nodes`).
 * **Clean_Data:** Parsed dates, fixed hidden blank values, and used `XLOOKUP`/`INDEX+MATCH` to pull in missing data like Severity Level.
 * **Dashboard_Engine & UI:** Built Pivot Tables to power a web-style, interactive dashboard using an F-Pattern layout and a high data-ink ratio (removing gridlines and borders).
