@@ -1,20 +1,21 @@
 # 🛡️ SOC Cyber Threat Analytics
 
 ## 📝 Business Scenario
-The Security Operations Center (SOC) provided a raw dump of 10,000 cyber incident logs. The objective was to clean the raw data, map the threat identifiers to their corresponding severity levels using lookup tables, and build an interactive front-end dashboard to track attack vectors and volume.
+The Security Operations Center (SOC) provided a raw dump of 10,000 cyber incident logs. The goal was to clean the data, link threat identifiers to their severity levels, and build an interactive dashboard to track attack types and volumes.
 
-## 🏗️ Architecture & Methodology
-This project strictly adheres to the **3-Tab Architecture** to separate raw data from business logic and the presentation layer:
+## 🏗️ Architecture & Workflow
+This project uses a layered architecture to separate raw data from the final visual dashboard:
+* **Row_Logs:** The untouched raw dataset and lookup tables (`threat_matrix`, `server_nodes`).
+* **Clean_Data:** Parsed dates, fixed hidden blank values, and used `XLOOKUP`/`INDEX+MATCH` to pull in missing data like Severity Level.
+* **Dashboard_Engine & UI:** Built Pivot Tables to power a web-style, interactive dashboard using an F-Pattern layout and a high data-ink ratio (removing gridlines and borders).
 
-1. **Row_Logs (The Vault):** The raw, untouched `cyber_incidents_raw.csv` dataset along with the `threat_matrix` and `server_nodes` lookup tables.
-2. **Clean_Data (The Core):** 
-   - Parsed timestamps and generated date helper columns.
-   - Deployed `XLOOKUP` / `INDEX+MATCH` to bridge the primary keys across the lookup tables, retrieving `Severity_Level` and `Breach_Status`.
-   - Handled ghost blank traps and executed data normalization.
-3. **Dashboard_Engine & Dashboard (The UI):** 
-   - Built an aggregation engine using Pivot Tables counting the primary key (`Incident_ID`).
-   - Designed a Web-friendly UI adhering to the **F-Pattern** and Gestalt Common Regions.
-   - Maximized the Data-Ink Ratio by stripping gridlines, legends, and redundant axis labels.
+## 🔍 Key Findings
+* **No Priority in Response Times:** Whether a threat is "Critical" or "Low" priority, the IT team takes the exact same amount of time (about 75 hours) to fix it. 
+* **Alert Fatigue:** Almost half (45%) of all incidents are labeled as "Critical." When everything is an emergency, it is hard for the team to know what is actually a true threat.
+
+## 💡 Business Recommendations
+1. **Set Strict Time Limits (SLAs):** Require "Critical" threats to be contained in under 24 hours. Move "Low" priority issues to a regular weekly schedule to free up the team's time.
+2. **Update the Alarm Rules:** Redefine what actually counts as a "Critical" threat so the highest alarm goes off less often. This helps the security team focus their energy only on real, dangerous network breaches.
 
 ## 📊 Dashboard Preview
 ![SOC Threat Analytics Dashboard](dashboard_preview.jpeg)
