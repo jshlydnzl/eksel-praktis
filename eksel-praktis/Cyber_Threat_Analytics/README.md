@@ -1,4 +1,4 @@
-# 🛡️ SOC Cyber Threat Analytics
+# 🛡️ Cyber Threat Analytics
 
 ## 📝 Business Scenario
 The Security Operations Center (SOC) provided a raw dump of 10,000 cyber incident logs. The goal was to clean the data, link threat identifiers to their severity levels, and build an interactive dashboard to track attack types and volumes.
