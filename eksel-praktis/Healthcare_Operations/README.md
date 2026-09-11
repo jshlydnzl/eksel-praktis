@@ -7,7 +7,7 @@ The Chief Medical Officer required an analysis of hospital efficiency and cost d
 This practice uses a layered architecture to separate raw data from the final visual dashboard:
 * **Data Engineering (Excel):** Cleaned invisible spaces (`TRIM`), handled missing values/blanks using Logic Gates (`IF`, `ISBLANK`), and consolidated fragmented patient records.
 * **Data Modeling:** Extracted chronological data (Months) from raw timestamps to build admission funnels.
-* **Dashboard Engine & UI:** Built dynamic Pivot Tables and connected Slicers to create an interactive, presentation-ready Dashboard for Executive Stakeholders.
+* **Dashboard Engine & UI:** Built dynamic Pivot Tables and basic interactive, presentation-ready Dashboard.
 
 ## 🔍 Key Findings
 * **Department Financials:** Cardiology, Neurology, Oncology, and Pediatrics drive the core financial volume. Patient costs scale evenly across departments after successfully filtering out "Unknown" buckets.
