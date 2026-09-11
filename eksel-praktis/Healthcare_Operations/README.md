@@ -22,4 +22,4 @@ This practice uses a layered architecture to separate raw data from the final vi
 4. **Monitor Acute-Care Cost Drivers:** Establish a specialized financial review tier for single-patient treatments crossing the $50,000 threshold to optimize insurance reimbursement.
 
 ## 📊 Dashboard Preview
-![Healthcare Dashboard](dashboard_preview.jpeg)
+![Healthcare Dashboard](dashboard_preview.png)
