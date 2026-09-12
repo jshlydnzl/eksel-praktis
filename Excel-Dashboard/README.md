@@ -1,7 +1,5 @@
 # 📈 Excel Dashboard Practices
 
-This directory is dedicated to **Phase 2 & 3: Data Aggregation and UI/UX Design**.
-
 Once data is cleaned, it requires an engine and an interface. The projects in this folder focus on building automated data engines and intuitive, stakeholder-ready interactive dashboards natively in Excel Web.
 
 ## Core Mechanics Practiced Here
