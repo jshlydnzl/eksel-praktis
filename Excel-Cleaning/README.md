@@ -1,7 +1,5 @@
 # 🧹 Excel Cleaning Practices
 
-This directory is dedicated to **Phase 1: Data Cleaning and Structuring**.
-
 Before data can be visualized, it must be robustly engineered. The challenges in this folder focus purely on transforming messy, raw datasets into pristine analytical tables using strict Data Engineering principles.
 
 ## Core Mechanics Practiced Here
